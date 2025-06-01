@@ -4,5 +4,7 @@ namespace PatientAPI.Repositories;
 
 public interface IPatientRepository
 {
-    Task<Patient> GetPatientWithDetailsAsync(int id);
+    Task<Patient?> GetPatientWithDetailsAsync(int id);
+    
+    Task AddPatientAsync(Patient patient);
 }
