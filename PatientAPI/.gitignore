@@ -1,0 +1,56 @@
+# 📦 Kompilacja .NET / MSBuild ---------------------------------------------------
+bin/
+obj/
+out/
+
+# 🛠️  Narzędzia IDE -------------------------------------------------------------
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.cache
+*.sln.docstates
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# 🗄️  Pliki systemowe i tymczasowe --------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swn
+*.swo
+
+# 📝  Logi i raporty -------------------------------------------------------------
+logs/
+*.log
+TestResults/
+coverage/
+
+# 🔐  Ustawienia lokalne / sekrety ---------------------------------------------
+# Zachowujemy podstawowy appsettings.json, ale ignorujemy środowiskowe i secrety.
+appsettings.*.json
+!appsettings.json
+Secrets/
+
+# 🛢️  Pliki baz danych lokalnych ------------------------------------------------
+*.db
+*.mdf
+*.ldf
+
+# 🐳  Docker ---------------------------------------------------------------------
+**/docker-compose.override.yml
+
+# ⚙️  Pliki dotnet-etl / EF Core -------------------------------------------------
+Migrations/**/Snapshot.cs   # generowane migawki – można trzymać, usuń 'Snapshot' z reguły jeśli chcesz commitować
+
+# 📄  Inne -----------------------------------------------------------------------
+*.ncrunch*
+_ReSharper*/
+
+# 🛑  Koniec --------------------------------------------------------------------
